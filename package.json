@@ -3,13 +3,13 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "setup": "npm install && cd client && npm install",
-    "build": "cd client && npm run build",
-    "prisma:generate": "prisma generate",
-    "start": "node server/server.js",
-    "dev": "node server/server.js",
-    "prisma:push": "prisma db push"
-  },
+  "setup": "npm install && cd client && npm install",
+  "build": "cd client && npm install && npm run build",
+  "prisma:generate": "prisma generate",
+  "start": "node server/server.js",
+  "dev": "node server/server.js",
+  "prisma:push": "prisma db push"
+},
   "dependencies": {
     "@prisma/client": "6.19.1",
     "bcryptjs": "^2.4.3",
